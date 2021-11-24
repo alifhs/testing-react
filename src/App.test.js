@@ -4,6 +4,8 @@ import { Counter  } from "./Counter";
 
 import {shallow, mount} from "enzyme";
 
+
+//jest javascript testing framework, enzyme is library that simplifies testing the react components by providing utility methods
 describe("Counter Testing", () => {
   // test("renders learn react link", () => {
   //   render(<App />);
@@ -22,7 +24,7 @@ describe("Counter Testing", () => {
   beforeEach(()=> {
     wrapper = mount(<App />);  
 
-    console.log(wrapper.debug())
+    // console.log(wrapper.debug())
 
   })
 

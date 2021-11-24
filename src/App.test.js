@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
+import { Counter  } from "./Counter";
 
-import {shallow} from "enzyme";
+import {shallow, mount} from "enzyme";
 
 describe("Counter Testing", () => {
   // test("renders learn react link", () => {
@@ -19,7 +20,9 @@ describe("Counter Testing", () => {
   
   let wrapper;
   beforeEach(()=> {
-    wrapper = shallow(<App />);
+    wrapper = mount(<App />);  
+
+    console.log(wrapper.debug())
 
   })
 
